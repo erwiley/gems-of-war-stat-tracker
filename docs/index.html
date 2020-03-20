@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- <link rel="icon" href="favicon-16x16.png" /> -->
+  <title>Gems</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">
+          <button type="button" class="btn btn-dark" onclick="defaultOrder()">Default</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-primary" onclick="starLevel()">Star Level</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-primary" onclick="kingdomLevel()">Kingdom Level</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-success" onclick="delveLevel()">Delve Level</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-success" onclick="delveFaction()">Faction Level</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-success" onclick="delveHorde()">Horde Level</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-warning" onclick="classLevel()">Class Level</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-warning" onclick="classTroop()">Class Troop</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-danger" onclick="weaponCount()">Weapon Count</button>
+        </th>
+        <th scope="col">
+          <button type="button" class="btn btn-info" onclick="petCount()">Pet Count</button>
+        </th>
+      </tr>
+    </thead>
+    <tbody id="gemsDataStart">
+    </tbody>
+  </table>
+
+  <template id="kingdom-table-template">
+    <tr>
+      <th scope="row" class="kingdom-categories">
+        <span class="kingdom-name"></span>
+        <span> / </span>
+        <span class="delve-name"></span>
+        <span> / </span>
+        <span class="class-name"></span>
+      </th>
+      <td class="star-level"></td>
+      <td class="kingdom-level"></td>
+      <td class="delve-level"></td>
+      <td class="delve-faction"></td>
+      <td class="delve-horde"></td>
+      <td class="class-level"></td>
+      <td class="class-troop"></td>
+      <td class="weapons-count"></td>
+      <td class="pets-count"></td>
+    </tr>
+  </template>
+
+  <script src="js/gemsdata.js"></script>
+  <script src="js/gemsfunctions.js"></script>
+</body>
+
+</html>
