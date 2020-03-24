@@ -98,8 +98,8 @@ let gemsDataGlobalArray = [
   {
     "id": 14,
     "kingdom": { "name": "Grosh-Nak", "star_level": 6, "kingdom_level": 12, "cards": 22, "bonus": "Armor" },
-    "class": { "name": "Barbarian", "level": 40, "troop": "Orc" },
-    "weapons": { "count": 9, "leveled": 4, "delve": "no", "doom": "yes" },
+    "class": { "name": "Barbarian", "level": 42, "troop": "Orc" },
+    "weapons": { "count": 10, "leveled": 4, "delve": "no", "doom": "yes" },
     "pets": { "count": 2, "highest": 5 }
   },
   {
@@ -174,7 +174,7 @@ let gemsDataGlobalArray = [
     "id": 24,
     "kingdom": { "name": "Shentang", "star_level": 8, "kingdom_level": 12, "cards": 20, "bonus": "Health" },
     "delve": { "name": "Lyrasza's Lair", "level": 220, "faction": 100, "horde": 112, "mana": "Yellow & Purple" },
-    "class": { "name": "Monk", "level": 22, "troop": "Elf" },
+    "class": { "name": "Monk", "level": 40, "troop": "Elf" },
     "weapons": { "count": 9, "leveled": 2, "delve": "yes", "doom": "yes" },
     "pets": { "count": 3, "highest": 5 }
   },
@@ -202,7 +202,7 @@ let gemsDataGlobalArray = [
   },
   {
     "id": 28,
-    "kingdom": { "name": "Suncrest", "star_level": 9, "kingdom_level": 12, "cards": 21, "bonus": "Attack" },
+    "kingdom": { "name": "Suncrest", "star_level": 9, "kingdom_level": 12, "cards": 22, "bonus": "Attack" },
     "delve": { "name": "Stonesong Eyrie", "level": 180, "faction": 180, "horde": 100, "mana": "Yellow & Brown" },
     "class": { "name": "Stormcaller", "level": 40, "troop": "Stryx" },
     "weapons": { "count": 6, "leveled": 3, "delve": "yes", "doom": "no" },

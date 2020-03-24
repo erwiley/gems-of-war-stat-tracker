@@ -5,7 +5,6 @@ function allFalse() {
 }
 
 function defaultOrder() {
-  console.log("defaultOrder");
   gemsDataGlobalArray.sort(function (a, b) {
     return a.id - b.id;
   });
@@ -185,8 +184,7 @@ function outputGemData(dataArray) {
     }
 
     if (viewClassTroop) {
-      // tmpl.querySelector(".class-troop").classList.add("bg-warning");
-      tmpl.querySelector(".class-troop").classList.add("bg-pink");
+      tmpl.querySelector(".class-troop").classList.add("bg-warning");
     }
 
     if (viewWeaponCount) {
