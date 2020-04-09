@@ -1,30 +1,30 @@
 let gemsDataGlobalArray = [
   {
     "id": 1,
-    "kingdom": { "name": "Adana", "star_level": 6, "kingdom_level": 10, "cards": 21, "bonus": "Armor" },
-    "class": { "name": "Mechanist", "level": 40, "troop": "Mech" },
+    "kingdom": { "name": "Adana", "star_level": 6, "kingdom_level": 12, "cards": 21, "bonus": "Armor" },
+    "class": { "name": "Mechanist", "level": 42, "troop": "Mech" },
     "weapons": { "count": 7, "leveled": 0, "delve": "no", "doom": "yes" },
     "pets": { "count": 2, "highest": 5 }
   },
   {
     "id": 2,
     "kingdom": { "name": "Blackhawk", "star_level": 8, "kingdom_level": 10, "cards": 20, "bonus": "Attack" },
-    "class": { "name": "Corsair", "level": 65, "troop": "Rogue" },
+    "class": { "name": "Corsair", "level": 70, "troop": "Rogue" },
     "weapons": { "count": 5, "leveled": 2, "delve": "no", "doom": "no" },
     "pets": { "count": 3, "highest": 5 }
   },
   {
     "id": 3,
-    "kingdom": { "name": "Blighted Lands", "star_level": 6, "kingdom_level": 10, "cards": 19, "bonus": "Magic" },
+    "kingdom": { "name": "Blighted Lands", "star_level": 6, "kingdom_level": 10, "cards": 21, "bonus": "Magic" },
     "class": { "name": "Diabolist", "level": 40, "troop": "Daemon" },
-    "weapons": { "count": 5, "leveled": 0, "delve": "no", "doom": "no" },
+    "weapons": { "count": 6, "leveled": 1, "delve": "no", "doom": "no" },
     "pets": { "count": 1, "highest": 5 }
   },
   {
     "id": 4,
     "kingdom": { "name": "Bright Forest", "star_level": 9, "kingdom_level": 12, "cards": 19, "bonus": "Health" },
     "delve": { "name": "Sunken Fleet", "level": 160, "faction": 160, "horde": 100, "mana": "Blue & Red" },
-    "class": { "name": "Hierophant", "level": 42, "troop": "Fey" },
+    "class": { "name": "Hierophant", "level": 47, "troop": "Fey" },
     "weapons": { "count": 8, "leveled": 4, "delve": "no", "doom": "no" },
     "pets": { "count": 3, "highest": 5 }
   },
@@ -32,7 +32,7 @@ let gemsDataGlobalArray = [
     "id": 5,
     "kingdom": { "name": "Broken Spire", "star_level": 6, "kingdom_level": 10, "cards": 22, "bonus": "Health" },
     "class": { "name": "Warlord", "level": 40, "troop": "Giant" },
-    "weapons": { "count": 9, "leveled": 2, "delve": "no", "doom": "yes" },
+    "weapons": { "count": 10, "leveled": 2, "delve": "no", "doom": "yes" },
     "pets": { "count": 3, "highest": 5 }
   },
   {
@@ -60,14 +60,15 @@ let gemsDataGlobalArray = [
   },
   {
     "id": 9,
-    "kingdom": { "name": "Dragon's Claw", "star_level": 8, "kingdom_level": 12, "cards": 18, "bonus": "Armor" },
+    "kingdom": { "name": "Dragon's Claw", "star_level": 8, "kingdom_level": 12, "cards": 19, "bonus": "Armor" },
     "class": { "name": "Dragonguard", "level": 100, "troop": "Dragon" },
     "weapons": { "count": 5, "leveled": 3, "delve": "no", "doom": "no" },
     "pets": { "count": 4, "highest": 5 }
   },
   {
     "id": 10,
-    "kingdom": { "name": "Drifting Sands", "star_level": 8, "kingdom_level": 12, "cards": 22, "bonus": "Armor" },
+    "kingdom": { "name": "Drifting Sands", "star_level": 10, "kingdom_level": 14, "cards": 22, "bonus": "Armor" },
+    "delve": { "name": "The Deep Hive", "level": 190, "faction": 160, "horde": 122, "mana": "Green & Brown" },
     "class": { "name": "Dervish", "level": 43, "troop": "Monster" },
     "weapons": { "count": 9, "leveled": 5, "delve": "no", "doom": "yes" },
     "pets": { "count": 2, "highest": 5 }
@@ -159,7 +160,7 @@ let gemsDataGlobalArray = [
     "id": 22,
     "kingdom": { "name": "Pan's Vale", "star_level": 8, "kingdom_level": 12, "cards": 23, "bonus": "Health" },
     "delve": { "name": "The Warrens", "level": 160, "faction": 160, "horde": 100, "mana": "Green/Yellow" },
-    "class": { "name": "Bard", "level": 66, "troop": "Wildfolk" },
+    "class": { "name": "Bard", "level": 70, "troop": "Wildfolk" },
     "weapons": { "count": 6, "leveled": 2, "delve": "yes", "doom": "no" },
     "pets": { "count": 1, "highest": 5 }
   },
@@ -205,7 +206,7 @@ let gemsDataGlobalArray = [
     "kingdom": { "name": "Suncrest", "star_level": 9, "kingdom_level": 12, "cards": 22, "bonus": "Attack" },
     "delve": { "name": "Stonesong Eyrie", "level": 180, "faction": 180, "horde": 100, "mana": "Yellow & Brown" },
     "class": { "name": "Stormcaller", "level": 40, "troop": "Stryx" },
-    "weapons": { "count": 6, "leveled": 3, "delve": "yes", "doom": "no" },
+    "weapons": { "count": 7, "leveled": 4, "delve": "yes", "doom": "no" },
     "pets": { "count": 3, "highest": 5 }
   },
   {
@@ -220,7 +221,7 @@ let gemsDataGlobalArray = [
     "id": 30,
     "kingdom": { "name": "Urskaya", "star_level": 8, "kingdom_level": 14, "cards": 21, "bonus": "Health" },
     "delve": { "name": "Werewoods", "level": 260, "faction": 150, "horde": 122, "mana": "Green & Red" },
-    "class": { "name": "Sentinel", "level": 89, "troop": "Urska" },
+    "class": { "name": "Sentinel", "level": 90, "troop": "Urska" },
     "weapons": { "count": 8, "leveled": 3, "delve": "yes", "doom": "no" },
     "pets": { "count": 3, "highest": 5 }
   },
@@ -235,7 +236,7 @@ let gemsDataGlobalArray = [
   {
     "id": 32,
     "kingdom": { "name": "Wild Plains", "star_level": 8, "kingdom_level": 12, "cards": 23, "bonus": "Attack" },
-    "class": { "name": "Shaman", "level": 44, "troop": "Tauros" },
+    "class": { "name": "Shaman", "level": 50, "troop": "Tauros" },
     "weapons": { "count": 7, "leveled": 2, "delve": "no", "doom": "no" },
     "pets": { "count": 2, "highest": 5 }
   },

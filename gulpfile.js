@@ -5,10 +5,12 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
 const purgecss = require('gulp-purgecss');
+concat = require('gulp-concat');
+terser = require('gulp-terser');
 
 
 function css() {
-  return gulp.src('docs/scss/**/*.scss')
+  return gulp.src('src/scss/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoprefixer())
     .pipe(cleanCSS({ compatibility: 'ie8' }))
@@ -24,6 +26,13 @@ function css() {
     .pipe(browserSync.stream());
 };
 
+function js() {
+  return gulp.src('src/js/**/*.js')
+    .pipe(concat('main.js'))
+    .pipe(terser())
+    .pipe(gulp.dest('docs/js'));
+};
+
 function watch() {
   browserSync.init({
     server: {
@@ -37,4 +46,5 @@ function watch() {
 };
 
 exports.css = css;
+exports.js = js;
 exports.watch = watch;
