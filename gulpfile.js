@@ -1,12 +1,12 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 const rename = require('gulp-rename');
-const purgecss = require('gulp-purgecss');
 concat = require('gulp-concat');
 terser = require('gulp-terser');
+//const browserSync = require('browser-sync').create();
+//const purgecss = require('gulp-purgecss');
 
 
 function css() {
@@ -17,13 +17,8 @@ function css() {
     .pipe(rename(function (path) {
       path.extname = ".min.css";
     }))
-    // .pipe(
-    //   purgecss({
-    //     content: ['public/**/*.html']
-    //   })
-    // )
     .pipe(gulp.dest('docs/css'))
-    .pipe(browserSync.stream());
+  //.pipe(browserSync.stream());
 };
 
 function js() {
@@ -34,15 +29,16 @@ function js() {
 };
 
 function watch() {
-  browserSync.init({
-    server: {
-      baseDir: "./docs",
-      index: "/index.html"
-    }
-  });
-  gulp.watch('docs/scss/**/*.scss', css)
-  gulp.watch('./*.html').on('change', browserSync.reload);
-  gulp.watch('./js/**/*.js').on('change', browserSync.reload);
+  // browserSync.init({
+  //   server: {
+  //     baseDir: "./src",
+  //     index: "/index.html"
+  //   }
+  // });
+  gulp.watch('src/scss/**/*.scss', css);
+  gulp.watch('src/js/**/*.js', js)
+  //gulp.watch('./*.html').on('change', browserSync.reload);
+  //gulp.watch('./js/**/*.js').on('change', browserSync.reload);
 };
 
 exports.css = css;
